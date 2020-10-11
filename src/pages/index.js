@@ -1,9 +1,13 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import Moment from 'react-moment';
+
 import App from '../components/App';
 import { headData } from '../mock/data';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
+
+Moment.globalFormat = 'MMM YYYY';
 
 export default () => {
   const { title, lang, description } = headData;
