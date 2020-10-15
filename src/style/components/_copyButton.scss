@@ -1,0 +1,65 @@
+.copy-button {
+  background-color: $button-background;
+  border-radius: 8px;
+  border: none;
+  box-shadow: none;
+  color: $text-color;
+  font-size: 1.6rem;
+  font-weight: bold;
+  height: 2.75em;
+  overflow: hidden;
+  position: relative;
+  text-transform: uppercase;
+  width: 6.5em;
+
+  @media (min-width: 768px) {
+    width: 5.5em;
+    height: 2.5em;
+  }
+
+  &:hover {
+    background-color: $button-background-hover;
+    transform: translate(1px, 1px);
+  }
+
+  &.copy-button--show-response {
+    .copy-button-inner {
+      top: -100%;
+    }
+  }
+}
+
+.copy-button-value {
+  position: absolute;
+  margin-top: -1000px;
+  margin-left: -1000px;
+  overflow: hidden;
+}
+
+.copy-button-inner {
+  position: absolute;
+  top: 0;
+  height: 200%;
+  left: 0;
+  right: 0;
+
+  transition: top 0.1s;
+}
+
+.copy-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 50%;
+  width: 100%;
+}
+
+.copy-response {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 50%;
+  width: 100%;
+}
