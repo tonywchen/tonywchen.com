@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    email: 'tony@tonywchen.com'
+  },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,

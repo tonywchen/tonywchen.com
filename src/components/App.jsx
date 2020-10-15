@@ -4,6 +4,7 @@ import Hello from './Hello/Hello';
 import Experience from './Experience/Experience';
 import Skill from './Skill/Skill';
 import Hobby from './Hobby/Hobby';
+import Contact from './Contact/Contact';
 /* import Hero from './Hero/Hero';
 import About from './About/About';
 import Projects from './Projects/Projects';
@@ -65,6 +66,7 @@ function App() {
         <Experience />
         <Skill />
         <Hobby />
+        <Contact />
       </main>
     </PortfolioProvider>
   )
