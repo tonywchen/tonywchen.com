@@ -15,10 +15,9 @@ const Hello = () => {
         <h1 className="section-title hello-title">
           { title }
         </h1>
-        <p className="hello-intro text-large-1">
-          { intro }
+        <p className="hello-intro text-large-1" dangerouslySetInnerHTML={{ __html: intro }}>
         </p>
-        <Sidekick tags={['design', 'frontend', 'backend', 'database']} />
+        <Sidekick tags={['design', 'frontend', 'backend', 'database']} times={3} />
       </Container>
     </section>
   );

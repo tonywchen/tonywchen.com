@@ -11,7 +11,12 @@ export const headData = {
 export const helloData = {
   key: 'hello',
   title: 'Hello!',
-  intro: 'I am Tony. I am a fullstack developer with over 8 years of professional experience building SaaS web applications. I am passionate about transforming user pain points into user-centred solutions using versatile skill sets from creating user interface mockups, building functional workflows, and ensuring accurate and efficient data storage and retrieval.',
+  intro: `
+    I am Tony.
+    I am a <strong>fullstack developer</strong> with 8 years of experience building SaaS web applications in tech startups.
+    My expertise is building <span class="text-highlight">user-centred</span> solutions that are both <span class="text-highlight">powerful</span> and <span class="text-highlight">beautiful</span> to solve user pain points.
+    I am experienced in the full software development cycle and have created multiple products from scratch and shipped them into production environments.
+  `
 };
 
 export const experienceData = {
@@ -19,7 +24,7 @@ export const experienceData = {
   title: 'I Worked At',
   companies: [{
     key: 'nown',
-    name: 'Nōwn',
+    name: 'Nōwn (formerly Lucova)',
     dateRange: {
       from: '2014/05/01',
       to: '2019/12/31'
@@ -107,6 +112,7 @@ export const experienceData = {
     }],
     projects: [{
       key: nanoid(),
+      name: 'BedsidePEWS',
       highlights: [{
         key: nanoid(),
         description: 'Implemented user interfaces and vital sign algorithms for a patient health early warning system, which analyzes patient vital signs and provides recommendations to prevent clinical deterioration',
@@ -159,7 +165,7 @@ export const hobbyData = {
     name: 'Pour-Over Coffee',
     images: [],
     description: 'Since the COVID-19 lockdown I have determined I am not going to stop my love for pour-over coffee. I have doubled down and created a simple tracker using MERN stack to explore interesting and sometimes rare coffee beans from some of my favourite local coffee roasters.',
-    action: 'Check out coffee from some of my favourite roasters',
+    action: 'Check out great coffee from around Toronto',
     link: 'https://coolbeans.tonywchen.com'
   }, {
     key: 'street-photography',

@@ -24,7 +24,7 @@ const observerOptions = {
   threshold: 1
 };
 
-const Sidekick = ({ tags, inline, silent }) => {
+const Sidekick = ({ tags, inline, silent, times, delay, force }) => {
   const sidekickRef = useRef();
 
   const [shouldAnimate, setShouldAnimate] = useState(false);
@@ -43,6 +43,11 @@ const Sidekick = ({ tags, inline, silent }) => {
       return;
     }
 
+    if (force) {
+      setShouldAnimate(true);
+      return;
+    }
+
     if (observer == null) {
       observer = new IntersectionObserver((entries) => {
         for (let entry of entries) {
@@ -58,7 +63,6 @@ const Sidekick = ({ tags, inline, silent }) => {
 
     return () => {
       if (observer != null) {
-        console.log('unobserve');
         observer.unobserve(sidekickRef.current);
       }
     }
@@ -76,16 +80,21 @@ const Sidekick = ({ tags, inline, silent }) => {
         };
 
         if (!silent) {
-          const animationDelay = (i * 0.05) + 's';
-          style.animationDelay = animationDelay;
+          const animationDelay = (i * 0.05);
+          const baseAnimationDelay = (delay)? delay : 0;
+          const animationDelayString = `${baseAnimationDelay + animationDelay}s`;
+          style.animationDelay = animationDelayString;
 
           if (shouldAnimate) {
             style.animationName = 'bounce';
+            style.animationIterationCount = (times)? times : 1;
           }
         }
 
+        const badgeClassNames = (force)? 'sidekick-badge' : 'sidekick-badge sidekick-badge--disable-mobile'
+
         return (
-          <span className="sidekick-badge" style={style} key={i}> 
+          <span className={badgeClassNames} style={style} key={i}> 
           </span>
         );
       })}
