@@ -5,14 +5,13 @@
 @import './base/base';
 @import './base/typography';
 
-@import './components/buttons';
-
-@import './layout/footer';
-@import './layout/sections';
-
 @import './sections/about';
+@import './sections/hello';
+@import './sections/experience';
+@import './sections/skill';
+@import './sections/hobby';
 @import './sections/contact';
-@import './sections/hero';
-@import './sections/projects';
+
+@import './components/sidekick';
 
 @import './vendor/css/font-awesome.min.css';

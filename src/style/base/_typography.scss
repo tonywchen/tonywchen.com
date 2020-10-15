@@ -14,12 +14,18 @@ a:hover {
 }
 
 .section-title {
+  font-weight: bold;
   margin-top: 6rem;
   text-transform: uppercase;
-}
 
-.dark-blue-text {
-  color: $dark-blue-text !important;
+  &:after {
+    display: block;
+    content: '';
+    width: 64px;
+    height: 8px;
+    background-color: #d5d5d5;
+    margin: 0.125em 0 0.75em;
+  }
 }
 
 .text-color-main {
@@ -38,15 +44,6 @@ a:hover {
   }
 }
 
-.text-left {
-  text-align: left;
-}
-.text-center {
-  text-align: center;
-}
-.text-right {
-  text-align: right;
-}
 .text-uppercase {
   text-transform: uppercase;
 }
