@@ -13,7 +13,7 @@ import Footer from './Footer/Footer'; */
 
 import { PortfolioProvider } from '../context/context';
 
-import { helloData, experienceData, skillData, hobbyData } from '../mock/data';
+import { helloData, experienceData, skillData, hobbyData } from '../data/data';
 
 function App() {
   /* const [hero, setHero] = useState({});

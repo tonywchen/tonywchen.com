@@ -163,21 +163,21 @@ export const hobbyData = {
   hobbies: [{
     key: 'pour-over',
     name: 'Pour-Over Coffee',
-    images: [],
+    images: ['coolbeans.jpg'],
     description: 'Since the COVID-19 lockdown I have determined I am not going to stop my love for pour-over coffee. I have doubled down and created a simple tracker using MERN stack to explore interesting and sometimes rare coffee beans from some of my favourite local coffee roasters.',
     action: 'Check out great coffee from around Toronto',
     link: 'https://coolbeans.tonywchen.com'
   }, {
     key: 'street-photography',
     name: 'Street Photography',
-    images: [],
+    images: ['street-photography.jpg'],
     description: 'I like people-watching and enjoy scenes where various subjects unexpectedly yet harmoniously come together. I find these scenes and make photographs during my free time, including my recent 3-month-long trip to Taiwan.',
     action: 'See what goes on around me',
     link: 'https://www.instagram.com/twcsnaps'
   }, {
     key: 'hugo',
     name: 'Hugo the Havanese Dog',
-    images: [],
+    images: ['hugo.jpg'],
     description: 'Hugo is a small Havanese dog. Hugo thinks he is a big boy. Hugo demands treats and my attention. Now Hugo is on Instagram for your attention.',
     action: 'Give Hugo your attention',
     link: 'https://www.instagram.com/hugothedivo'
