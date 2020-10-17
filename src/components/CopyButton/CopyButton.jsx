@@ -49,7 +49,7 @@ const CopyButton = ({ children, value }) => {
         <div className={actionClassNames}>Copy</div>
         <div className={responseClassNames}>
           {toRespond && (
-            <Sidekick tags={['design', 'frontend', 'backend', 'database']} times={1} force={true} delay={0.05} />
+            <Sidekick tags={['design', 'frontend', 'backend', 'database']} times={1} force={true} delay={0.05} invert={true} />
           )}
         </div>
       </>

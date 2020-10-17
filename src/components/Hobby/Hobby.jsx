@@ -14,6 +14,7 @@ const Hobby = () => {
             fluid {
               originalName
               src
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -49,7 +50,7 @@ const Hobby = () => {
         </h1>
         <Row noGutters>
           <Col xs={11} sm={3} md={3} lg={3}>
-            <Row>
+            <Row noGutters>
               {hobbies.map((hobby) => {
                 const { key, name } = hobby;
                 const classNames = (key === selectedHobby.key) ? 'hobby-name hobby-name--selected' : 'hobby-name';

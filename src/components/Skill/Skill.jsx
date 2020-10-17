@@ -22,8 +22,8 @@ const Skill = () => {
             return (
               <Col key={key} xs={12} sm={6} md={3}>
                 <div className="domain">
-                  <Sidekick tags={[key]} delay={i * 0.1}></Sidekick>
                   <h4>{ name }</h4>
+                  <Sidekick tags={[key]} delay={i * 0.1}></Sidekick>
                   <Row>
                     {skills.map((skill) => {
                       return (
