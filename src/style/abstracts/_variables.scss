@@ -1,16 +1,35 @@
 // COLORS
-$primary-color: #d58228;
-$secondary-color: #393836;
+$primary-color: #13a4eb;
+$primary-fade: #69808b;
+$secondary-color: #13a4eb;
 
-$background-color: #222222;
+$background-body: #1f282d;
+$background-primary: #13a4eb;
+$background-secondary: #2f3c42;
 
-$button-background: #393836;
-$button-background-hover: #111111;
-
+$button-background: #13a4eb;
+$button-background-hover: #087db8;
 
 $text-color: #ffffff;
-$text-secondary: #999999;
-$title-color: #d5d5d5;
+$text-secondary: #69808b;
+$text-color-invert: #222222;
+$title-color: #ffffff;
+$title-color-invert: #222222;
 
 // FONT SIZE
 $default-font-size: 1.6rem;
+
+// TITLE
+$section-title-font-size: 5rem;
+$section-title-line-height: 6rem; // 120% effectively
+$section-title-divider-margin-top: 1rem;
+$section-title-divider-margin-bottom: 3.5rem;
+$section-title-divider-height: 0.5rem;
+
+$section-title-height: (
+    $section-title-line-height +
+    $section-title-divider-margin-top + 
+    $section-title-divider-margin-bottom + 
+    $section-title-divider-height
+);
+@debug $section-title-height;

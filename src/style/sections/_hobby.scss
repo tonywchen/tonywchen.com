@@ -9,7 +9,8 @@
   transition: background-color 0.25s;
 
   &.hobby-name--selected {
-    background-color: #4a524c;
+    background-color: $background-secondary;
+    color: $text-color;
   }
 
   @media (min-width: 768px) {
@@ -21,29 +22,38 @@
   }
 }
 .hobby-content {
-  background-color: #4a524c;
+  background-color: $background-secondary;
+  color: $text-color;
   border-radius: 0 5% 0 5%;
   padding: 1.2em 1.2em 3em 1.2em;
 }
 .hobby-image {
-  background-color: #4a524c;
+  background-color: $background-secondary;
   margin-bottom: 1.2em;
-  padding-top: 66%; /* 3:2 ratio */
   position: relative;
   width: 100%;
 }
 .hobby-link {
   position: absolute;
-  bottom: -32px;
-  right: -1em;
+  bottom: -16px;
+  right: -0.5em;
   max-width: 100%;
 
-  background-color: #3c483e;
-  color: #ffffff;
+  background-color: $button-background;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  color: $text-color-invert;
   padding: 0.5em 1.2em;
 
-  @media (min-width: 992px) {
-    right: -10%;
+  @media (min-width: 768px) {
+    bottom: -32px;
+    right: -5%;
     max-width: 100%;
+  }
+
+  &:hover {
+    background-color: $button-background-hover;
+    color: $text-color-invert;
+    transform: translate(1px, 1px);
   }
 }

@@ -1,14 +1,13 @@
 .sidekick {
   display: block;
 
-  &.inline {
+  &--inline {
     display: inline-block;
     margin: auto 0.4rem;
   }
 }
 
 .sidekick-badge {
-  /* border-radius: 50%; */
   display: inline-block;
   height: 1rem;
   margin: 0 0.1rem;
@@ -23,9 +22,25 @@
     margin-right: 0;
   }
 
-  @media (max-width: 767px) {
+  @include below(desktop) {
     &.sidekick-badge--disable-mobile {
       animation: none !important;
+    }
+  }
+}
+
+.sidekick {
+  .sidekick-badge {
+    path, rect, circle {
+      fill: $primary-color;
+    }
+  }
+
+  &--invert {
+    .sidekick-badge {
+      path, rect, circle {
+        fill: $text-color;
+      }
     }
   }
 }
