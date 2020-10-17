@@ -2,9 +2,9 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'Tony Wei-Han Chen', // e.g: 'Name | Developer'
+  lang: 'en', // e.g: en, es, fr, jp
+  description: 'I am Tony, a fullstack developer. Welcome to my website!', // e.g: Welcome to my website
 };
 
 // HOE DATA
@@ -73,9 +73,11 @@ export const experienceData = {
         tags: ['frontend', 'backend', 'database']
       }],
       techStacks: [
-        'AngularJS',
-        'Java/Dropwizard/Hibernate',
-        'MySQL'
+        { name: 'AngularJS', level: 0 },
+        { name: 'Java', level: 0 },
+        { name: 'Dropwizard', level: 1 },
+        { name: 'Hibernate', level: 1 },
+        { name: 'MySQL', level: 0 }
       ]
     }, {
       key: nanoid(),
@@ -94,9 +96,11 @@ export const experienceData = {
         tags: ['design', 'frontend']
       }],
       techStacks: [
-        'AngularJS',
-        'Ruby/Sinatra/Mongoid',
-        'MongoDB'
+        { name: 'AngularJS', level: 0 },
+        { name: 'Ruby', level: 0 },
+        { name: 'Sinatra', level: 1 },
+        { name: 'Mongoid', level: 1 },
+        { name: 'MongoDB', level: 0 }
       ]
     }]
   }, {
@@ -127,9 +131,12 @@ export const experienceData = {
         tags: ['frontend', 'backend']
       }],
       techStacks: [
-        'AngularJS',
-        'Java/Vaadin/Spring/Hibernate',
-        'PostgresSQL'
+        { name: 'AngularJS', level: 0 },
+        { name: 'Java', level: 0 },
+        { name: 'Vaddin', level: 1 },
+        { name: 'Spring', level: 1 },
+        { name: 'Hibernate', level: 1 },
+        { name: 'PostgresSQL', level: 0 }
       ]
     }]
   }]
@@ -164,7 +171,7 @@ export const hobbyData = {
     key: 'pour-over',
     name: 'Pour-Over Coffee',
     images: ['coolbeans.jpg'],
-    description: 'Since the COVID-19 lockdown I have determined I am not going to stop my love for pour-over coffee. I have doubled down and created a simple tracker using MERN stack to explore interesting and sometimes rare coffee beans from some of my favourite local coffee roasters.',
+    description: 'Since the COVID-19 lockdown I have determined not to stop my love for pour-over coffee. I have doubled down and created a simple tracker using MERN stack to help me track down new, interesting coffee beans from some of my favourite local coffee roasters.',
     action: 'Check out great coffee from around Toronto',
     link: 'https://coolbeans.tonywchen.com'
   }, {
