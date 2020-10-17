@@ -1,0 +1,25 @@
+#hello {
+  position: relative;
+
+  .hello-title {
+    @include respond(desktop) {
+      position: absolute;
+      top: calc(45vh - #{$section-title-height});
+      height: $section-title-height;
+
+      padding-top: 0;
+    }
+  }
+
+  .hello-intro {
+    font-size: 1.6rem;
+    line-height: 2em;
+
+    @include respond(desktop) {
+      font-size: 1.2rem;
+      line-height: 2em;
+      position: absolute;
+      top: 45vh;
+    }
+  }
+}

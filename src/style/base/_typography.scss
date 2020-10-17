@@ -30,9 +30,9 @@ h6 { font-size: 1.25rem; }
     display: block;
     content: '';
     width: 64px;
-    height: 8px;
+    height: $section-title-divider-height;
     background-color: #d5d5d5;
-    margin: 0.125em 0 0.75em;
+    margin: $section-title-divider-margin-top 0 $section-title-divider-margin-bottom;
   }
 }
 
