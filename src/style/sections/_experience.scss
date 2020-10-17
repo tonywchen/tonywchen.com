@@ -16,19 +16,9 @@
 .project-list {
   padding-left: 1em;
 }
-
 .project {
-  margin: 1em 0;
-
-  /* &:before {
-    content: '';
-    display: block;
-    border-bottom: 1px solid #666666;
-    margin: 1em 0 1.5em;
-    width: 64px;
-  } */
+  margin: 2em 0;
 }
-
 .project-header {
   margin-bottom: 1em;
 }
@@ -45,8 +35,8 @@ ul.highlight-list {
 
   li {
     line-height: 1.4em;
-    margin-bottom: 1.4em;
-    padding-left: 1em;
+    margin-bottom: 2rem;
+    padding-left: 1.4rem;
     position: relative;
 
     &:last-child {
@@ -61,24 +51,30 @@ ul.highlight-list {
       bottom: 0.25em;
       left: 0;
 
-      border-left: 1px solid #666666;
+      border-left: 1px solid $primary-fade;
     }
-
-    /* &:before {
-      position: absolute;
-      content: '';
-      display: block;
-      top: 50%;
-      left: 0;
-      margin-left: -6px;
-      margin-top: -6px;
-      width: 12px;
-      height: 12px;
-      border-radius: 6px;
-
-      background-color: rgba(255, 255, 10, 1);
-    } */
-
-
   }
+}
+
+.tech-stack-container {
+  color: $text-secondary;
+  font-size: 1rem;
+  margin-left: 1.4rem;
+
+  @include respond(desktop) {
+    margin-left: auto;
+  }
+}
+.tech-stack-header {
+  font-weight: bold;
+}
+.tech-stack-list {
+  color: $text-color;
+}
+.tech-stack {
+  background-color: #151b1e;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0.1em 0.5em 0.25em 0;
+  padding: 0.1em 0.75em;
 }

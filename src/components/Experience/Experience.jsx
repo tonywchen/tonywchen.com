@@ -59,12 +59,12 @@ const Experience = () => {
 
                 <div className="project-list">
                   {projects.map((project) => {
-                    const { key, name, highlights } = project;
+                    const { key, name, highlights, techStacks } = project;
                     
                     return (
                       <div key={key} className="project">
                         <Row>
-                          <Col xs="12" md="11">
+                          <Col xs="12" md="9">
                             <h5 className="project-header">
                               <span className="project-decorator">Project</span>
                               <span className="text-highlight project-name">{ name }</span>
@@ -72,7 +72,7 @@ const Experience = () => {
                           </Col>
                         </Row>
                         <Row>
-                          <Col xs="12" md="12">
+                          <Col xs="12" md="8" lg="9">
                             <ul className="highlight-list">
                               {highlights.map((highlight) => {
                                 const { key, description, tags } = highlight;
@@ -85,6 +85,28 @@ const Experience = () => {
                                 )
                               })}
                             </ul>
+                          </Col>
+                          <Col xs="12" md="4" lg="3">
+                            { techStacks && (
+                              <div className="tech-stack-container">
+                                <div className="tech-stack-header">
+                                  Tech Stacks
+                                </div>
+                                <div className="tech-stack-list">
+                                  {
+                                    techStacks.map(({name, level}) => {
+                                      const classNames = `tech-stack tech-stack--level-${level}`;
+
+                                      return (
+                                        <div key={name} className={classNames}>
+                                          {name}
+                                        </div>
+                                      );
+                                    })
+                                  }
+                                </div>
+                              </div>
+                            )}
                           </Col>
                         </Row>
                       </div>
