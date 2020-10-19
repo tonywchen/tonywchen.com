@@ -75,7 +75,9 @@ const Hobby = () => {
               <div className="hobby-description">
                 { selectedHobby.description }
               </div>
-              <a href={ selectedHobby.link } target="_blank" className="hobby-link">{ selectedHobby.action }</a>
+              <div className="hobby-link">
+                <a href={ selectedHobby.link }  target="_blank" >{ selectedHobby.action }</a>
+              </div>
             </div>
           </Col>
           )}

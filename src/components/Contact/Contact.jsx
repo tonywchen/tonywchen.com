@@ -22,9 +22,12 @@ const Contact = () => {
     <section id="contact">
       <Container>
         <h1 className="section-title contact-title">Find Me At</h1>
-        <p>tony <strong>AT</strong> tonywchen.com</p>
-        <CopyButton value={email}>
-        </CopyButton>
+        <div className="contact-info">
+          <p>tony <strong>AT</strong> tonywchen.com</p>
+          <CopyButton value={email}>
+          </CopyButton>
+        </div>
+
       </Container>
     </section>
   );

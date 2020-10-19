@@ -32,10 +32,6 @@ section {
   @media (orientation: portrait) {
     min-height: 80vh;
   }
-
-  &:last-child {
-    min-height: 75vh;
-  }
 }
 
 @media (min-width: 992px) {
