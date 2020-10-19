@@ -1,4 +1,6 @@
 .hobby-name {
+  border-radius: 4px 0 0 4px;
+  cursor: pointer;
   font-size: 1.2rem;
   height: 100%;
   line-height: 1.2em;
@@ -7,6 +9,10 @@
   text-align: left;
   text-transform: uppercase;
   transition: background-color 0.25s;
+
+  &:hover {
+    background-color: darken($background-body, 5%);
+  }
 
   &.hobby-name--selected {
     background-color: $background-secondary;
@@ -42,8 +48,13 @@
   background-color: $button-background;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  color: $text-color-invert;
   padding: 0.5em 1.2em;
+
+  &:hover {
+    background-color: $button-background-hover;
+    color: $text-color;
+    transform: translate(1px, 1px);
+  }
 
   @media (min-width: 768px) {
     bottom: -32px;
@@ -51,9 +62,8 @@
     max-width: 100%;
   }
 
-  &:hover {
-    background-color: $button-background-hover;
-    color: $text-color-invert;
-    transform: translate(1px, 1px);
+  a {
+    border-bottom: 1px dotted transparentize($text-color, 0.5);
+    color: $text-color;
   }
 }

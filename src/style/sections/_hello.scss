@@ -1,5 +1,7 @@
 #hello {
-  position: relative;
+  .container {
+    position: relative;
+  }
 
   .hello-title {
     @include respond(desktop) {
@@ -16,10 +18,13 @@
     line-height: 2em;
 
     @include respond(desktop) {
-      font-size: 1.2rem;
-      line-height: 2em;
       position: absolute;
       top: 45vh;
+      left: 15px;
+      right: 15px;
+
+      font-size: 1.2rem;
+      line-height: 2em;
     }
   }
 }

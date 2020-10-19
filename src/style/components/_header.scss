@@ -115,8 +115,9 @@ header {
     text-align: center;
   
     font-size: 1.2rem;
+    margin-top: 0;
     position: relative;
-    transition: margin-top 0.1s;
+    transition: margin-top 0.2s;
     z-index: 1;
   
     @include respond(desktop) {
@@ -132,6 +133,15 @@ header {
   
     ul {
       padding-inline-start: 0;
+    }
+  }
+  header.header--collapsed {
+    nav {
+      margin-top: -200%;
+
+      @include respond(desktop) {
+        margin-top: 0;
+      }
     }
   }
   
