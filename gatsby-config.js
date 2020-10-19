@@ -34,5 +34,10 @@ module.exports = {
         icon: 'src/images/favicon.png',
       },
     },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+      },
+    },
   ],
 };
