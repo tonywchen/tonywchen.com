@@ -6,7 +6,7 @@ import Sidekick from '../Sidekick/Sidekick';
 
 const Skill = () => {
   const { skill } = useContext(PortfolioContext);
-  const { title, domains } = skill;
+  const { title, domains, current } = skill;
 
   return (
     <section id="skill">
@@ -38,6 +38,11 @@ const Skill = () => {
             );
           })}
           </Row>
+          { current && (
+            <p className="text-large">
+              { current.description }
+            </p>
+          )}
         </div>
       </Container>
     </section>

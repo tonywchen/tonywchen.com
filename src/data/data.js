@@ -161,7 +161,10 @@ export const skillData = {
     key: 'design',
     name: 'Design',
     skills: ['Sketch', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign']
-  }]
+  }],
+  current: {
+    description: 'I am also currently learning React and Gatsby to experience different frontend tools to deliver solutions.'
+  }
 };
 
 export const hobbyData = {
