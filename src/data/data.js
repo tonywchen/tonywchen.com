@@ -31,7 +31,7 @@ export const experienceData = {
     },
     titles: [{
       key: nanoid(),
-      name: 'Senior Fullstack Engineer',
+      name: 'Senior Fullstack Developer',
       dateRange: {
         from: '2018/10/01',
         to: '2019/12/31'
@@ -41,7 +41,7 @@ export const experienceData = {
       name: 'Web Developer',
       dateRange: {
         from: '2014/05/01',
-        to: '2018/10/01'
+        to: '2018/09/30'
       }      
     }],
     projects: [{
@@ -171,18 +171,18 @@ export const hobbyData = {
   key: 'hobby',
   title: 'I Also Like',
   hobbies: [{
-    key: 'pour-over',
-    name: 'Pour-Over Coffee',
+    key: 'coffee-brewing',
+    name: 'Coffee',
     images: ['coolbeans.jpg'],
-    description: 'Since the COVID-19 lockdown I have determined not to stop my love for pour-over coffee. I have doubled down and created a simple tracker using MERN stack to help me track down new, interesting coffee beans from some of my favourite local coffee roasters.',
+    description: 'Since the COVID-19 lockdown I have determined not to stop my love for coffee. I have been honing up my pour-over coffee brewing skill, and have created a simple tracker using MERN stack to help me track down new, interesting coffee beans from some of my favourite local coffee roasters.',
     action: 'Check out great coffee from around Toronto',
     link: 'https://coolbeans.tonywchen.com'
   }, {
     key: 'street-photography',
     name: 'Street Photography',
     images: ['street-photography.jpg'],
-    description: 'I like people-watching and enjoy scenes where various subjects unexpectedly yet harmoniously come together. I find these scenes and make photographs during my free time, including my recent 3-month-long trip to Taiwan.',
-    action: 'See what goes on around me',
+    description: 'I enjoy the energy of city living and how people come together with each other and with the urban environment. I find these scenes inspiring and make photographs during my free time, including my recent 3-month-long trip to Taiwan.',
+    action: 'Come see with my eyes',
     link: 'https://www.instagram.com/twcsnaps'
   }, {
     key: 'hugo',
