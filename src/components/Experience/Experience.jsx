@@ -80,7 +80,6 @@ const Experience = () => {
                                 return (
                                   <li key={key}>
                                     {description}
-                                    <Sidekick tags={tags} inline={true}/>
                                   </li>
                                 )
                               })}

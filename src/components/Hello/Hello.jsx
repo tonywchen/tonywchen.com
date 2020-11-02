@@ -18,7 +18,7 @@ const Hello = () => {
         <div className="hello-intro">
           <div className="text-large-1" dangerouslySetInnerHTML={{ __html: intro }}>
           </div>   
-          <Sidekick tags={['design', 'frontend', 'backend', 'database']} times={3} />
+          <Sidekick tags={['design', 'frontend', 'backend', 'database']} times={2} />
         </div>
       </Container>
     </section>
